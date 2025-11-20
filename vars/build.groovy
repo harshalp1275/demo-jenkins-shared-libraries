@@ -1,3 +1,4 @@
-echo "This is building the code"
-                sh "whoami"
-                sh "docker build -t note-app:latest ."
+// Define function
+def call(String ProjectName, String ImageTag, String DockerHubUser){
+  sh "docker build -t ${DockerHubUser}/${ProjectName}:${ImageTag} ."
+}
