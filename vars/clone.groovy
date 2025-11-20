@@ -1,6 +1,6 @@
-def call(){
+def call(string url , string branch){
 
 echo "This is cloning the code"
-                git url: "https://github.com/harshalp1275/django-notes-app.git" , branch : "feature-harsh-test-django-app"
+                git url: "${url}" , branch : "${branch}"
                 echo "code cloning successful"
 }
